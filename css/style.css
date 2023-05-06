@@ -8,21 +8,45 @@
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
-
-.fa-solid {
-    color: var(--main-color);
-}
-
 body {
     display: flex;
     justify-content: center;
 }
+
+header { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: cadetblue;
+    align-items: center;
+    height: 79px;
+}
+.navalign {
+    
+    align-self: flex-start;
+}
+.navheader {
+    margin-left: 30px;
+
+}
+
+
+.logoheader {
+    width: 61.09px;
+    height: 19px; 
+}
+.fa-solid {
+    color: var(--main-color);
+}
+
+
 
 .main-container {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+    background-color: darkgrey;
 }
 
 .section-title {
@@ -60,7 +84,8 @@ body {
 }
 
 .hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
+    /* background-color: var(--main-bg-color); */
+    background-color: green;
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
@@ -69,6 +94,57 @@ body {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    
+}
+
+.hebergementsrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} 
+.hebergements-title {
+    display: flex;
+    
+}
+
+
+.hebergements-cards .card {
+    display: flex;
+    margin-top: 33px;
+    flex-direction: column;    
+    /* display: inline-block; */
+    
+}
+/* Changement de la largeur */
+.hebergements-cards img {
+    /* width: 83%; */
+    /* Réduction de la hauteur 20 pixels */
+    height: 106px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+    width: 77%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    /* justify-content: space-between; */
+    /* box-sizing: border-box; */
+}
+
+.hebergements-cards .card-title {
+    /* margin-top: 10px;
+    margin-bottom: 4px; */
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
 }
 
 /****** Populaires ***********/

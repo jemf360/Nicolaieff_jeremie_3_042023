@@ -15,6 +15,8 @@ body {
     justify-content: center;
 }
 
+
+
 header { 
     display: flex;
     flex-direction: row;
@@ -51,49 +53,121 @@ border-top: 2px solid var(--main-color);
 /* search bar style */
 form{
     display: flex;
+    flex-direction: row;
     background-color: aqua;
     height: 49px;
     margin-top: 35px;
     margin-bottom: 50px;
+    align-items: center;
+    box-sizing: border-box;
     
 }
+
 /* Je n'arrive pas à positionnerl'icône centrée */
 form i {
     display: flex;
-    flex-direction: row;    
-    display: inline-block;
-    font-size: 18px;
-    width: 50px;
-    /* height: 49px;    */
-    text-align: center;    
-    padding: 14px;
-    border-radius: 15px 0 0 15px;
-    background-color: antiquewhite;
+    /* display: inline-block; */
+    /* flex-direction: row; */
+    /* font-size: 18px; */
+    /* width: 50px; */
+    /* height: 49px; */
+    /* height: 100%;   */
+    /* text-align: center; 
+    align-items: center;    */
+    /* padding: 14px; */
+    /* background-color: antiquewhite; */
+
 }
+.background-icon{
+    background-color: var(--main-bg-color);
+    height: 100%;
+    width: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 0 0 15px;
+
+}
+
 input{
-    font-size: 1.2rem;
+    font-size: 18px;
     font-weight: 700;
     text-align: center;
-    padding: 14px;
-    border:#F2F2F2;
+    height: 100%;
+    border: transparent;
+    box-sizing: border-box;
+    padding: 0 14px 0 14px;
+    background-color: cadetblue;
 }
 label{
     display: flex;
     background-color: var(--main-color);
+    font-size: 18px;
     text-align: center;
     align-items: center;
-    padding: 14px;
+    padding: 0 14px 0 14px;
+    height: 100%;
     color: var(--filter-bg-color);
     font-weight: 700;
     border-radius: 0 15px 15px 0;
+    box-sizing: border-box;
+    
 }
 
 
 
+/* search bar style  end*/
 
+/* menu filter economique familial romantique et nos petites */
 
+.navfilter{
+    display: flex;
+    /* flex-direction: row; */
+    column-gap: 2%;
+    /* height: 50px; */
+    background-color: aqua;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+}
+.navfilter h3 a {
+    display: flex;
+    display: inline-block;
+    /* text-decoration: none; */
+    /* color: black; */
+}
+.navfilter a {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    padding-right: 0.8em;
+}
+.navfilter i{
+    padding: 0.8em;
+}
 
+.navfilter a:hover {
+    /* border: 2px solid gray; */
+    color: var(--main-color);
+    border-radius:  30px;
+    box-shadow: 2px 2px 10px black;
+    box-sizing: border-box;
+}
 
+.info-bloc{ 
+    margin: 1em;
+}
+.info-icon{
+    padding: 0.8em;
+}
+.info-text{
+    color: #000;
+    font-size: 0.8em;
+    font-weight: 500;
+    padding: 0.8em;
+
+}
 
 
 
@@ -124,6 +198,7 @@ label{
 .card img {
     object-fit: cover;
 }
+
 
 .card-title {
     font-size: 16px;
@@ -285,6 +360,20 @@ label{
     margin-bottom: 5px;
 }
 
+
+
+/* Activité à Marseille card */
+
+.activmars {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    box-sizing: border-box;
+}
+.activmars img{
+    object-fit: cover;
+  width: 200px;
+}
 
 
 

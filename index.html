@@ -30,24 +30,24 @@
           <a href="" class="navheader">Activités</a>
         </nav>
       </header>
+      <!-- Trouvez votre hébergement pour des vacances de rêve -->
       <section>
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
         <form action="" method="get">
-          <p class="background-icon">
-            <i
-              class="fa-solid fa-location-dot fa-lg"
-              style="color: #000000"
-            ></i>
-          </p>
+          <label for="search" class="background-icon-search">
+            <i class="fa-solid fa-location-dot fa-lg"></i>
+          </label>
           <input
             type="search"
             name="search"
             id="search"
-            value="Marseille, France"
-            size=""
+            placeholder="Marseille, France"
+            autofocus
+            required
+            class="search-champ"
           />
-          <label for="search">Recherche</label>
+          <input type="submit" value="Recherche" class="btn-search" />
         </form>
         <nav class="navfilter">
           <h3>Filtres</h3>
@@ -56,9 +56,12 @@
           <a href="#"><i class="fa-solid fa-heart"></i>Romantique</a>
           <a href="#"><i class="fa-solid fa-fire"></i>Nos pétites</a>
         </nav>
-        <article class="info-bloc">
-               <p class="info-text"><i class="fa-solid fa-info fa-xs info-icon"></i>Plus de 500 logements sont disponibles dans cette ville</p>
-        </article>
+        <div class="info-block  info-icon info-text">
+          <i class="fa-solid fa-info fa-xs"></i>
+          <p>
+            Plus de 500 logements sont disponibles dans cette ville
+          </p>
+        </div>
       </section>
       <main>
         <div class="hebergements-and-populaires">
@@ -311,41 +314,64 @@
             </div>
           </section>
         </div>
-        <section>
-            
+
+        <!-- section les cartes d'activité à Marseille -->
+        <section class="section-activite">
           <h2>Activités à Marseille</h2>
-          <div class="hebergements-cards hebergementsrow">
-            
+          <div class="activite-cards activiterow">
             <article class="card">
-              <img src="/images/activites/kilyan-sockalingum.jpg" alt="Les Calanques de Marseille"/>
-              <div class="card-content">
-                <div class="card-txt">
-                  <h3 class="card-title">Chambres d’hôtes</h3>
-                </div>
-              </div>
+              <a href="#">
+
+                  <img
+                  src="/images/activites/kilyan-sockalingum.jpg"
+                  alt="Image du Vieux-Port de Marseille"
+                  />
+                  <div class="card-content">
+                      <div class="card-txt">
+                          <h3 class="card-title">Vieux-Port</h3>
+                        </div>
+                    </div>
+                </a>
             </article>
             <article class="card">
-                <img src="/images/activites/kilyan-sockalingum.jpg" alt="Les Calanques de Marseille"/>
-                <div class="card-content">
-                  <div class="card-txt">
-                    <h3 class="card-title">Chambres d’hôtes</h3>
-                  </div>
+                <a href="">
+              <img
+                src="/images/activites/kilyan-sockalingum.jpg"
+                alt="Image de Fort de Pomègues"
+              />
+              <div class="card-content">
+                <div class="card-txt">
+                  <h3 class="card-title">Fort de Pomègues</h3>
                 </div>
-              </article> <article class="card">
-                <img src="/images/activites/kilyan-sockalingum.jpg" alt="Les Calanques de Marseille"/>
-                <div class="card-content">
-                  <div class="card-txt">
-                    <h3 class="card-title">Chambres d’hôtes</h3>
-                  </div>
+              </div>
+            </a>
+            </article>
+            <article class="card">
+                <a href="">
+                <img
+                src="/images/activites/kilyan-sockalingum.jpg"
+                alt="Image des Calanques de Marseille"
+              />
+              <div class="card-content">
+                <div class="card-txt">
+                  <h3 class="card-title">Parc national des Calanques</h3>
                 </div>
-              </article> <article class="card">
-                <img src="/images/activites/kilyan-sockalingum.jpg" alt="Les Calanques de Marseille"/>
-                <div class="card-content">
-                  <div class="card-txt">
-                    <h3 class="card-title">Chambres d’hôtes</h3>
-                  </div>
+              </div>
+            </a>
+            </article>
+            <article class="card">
+              <a href="">
+                <img
+                src="/images/activites/kilyan-sockalingum.jpg"
+                alt="Image de notre-dame-de-la-garde"
+              />
+              <div class="card-content">
+                <div class="card-txt">
+                  <h3 class="card-title">Notre-Dame-De-La-Garde</h3>
                 </div>
-              </article>
+              </div>
+            </a>
+            </article>
           </div>
         </section>
       </main>

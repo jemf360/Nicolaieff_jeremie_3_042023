@@ -9,10 +9,14 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --filter-gr-border-color: #D9D9D9;
+    --filter-txt-color: #FFFFFF;
+    
 }
 body {
     display: flex;
     justify-content: center;
+    
 }
 
 
@@ -54,52 +58,41 @@ border-top: 2px solid var(--main-color);
 form{
     display: flex;
     flex-direction: row;
-    background-color: aqua;
+    
     height: 49px;
     margin-top: 35px;
     margin-bottom: 50px;
     align-items: center;
-    box-sizing: border-box;
-    
+        
 }
 
-/* Je n'arrive pas à positionnerl'icône centrée */
-form i {
-    display: flex;
-    /* display: inline-block; */
-    /* flex-direction: row; */
-    /* font-size: 18px; */
-    /* width: 50px; */
-    /* height: 49px; */
-    /* height: 100%;   */
-    /* text-align: center; 
-    align-items: center;    */
-    /* padding: 14px; */
-    /* background-color: antiquewhite; */
 
-}
-.background-icon{
-    background-color: var(--main-bg-color);
+.background-icon-search{
     height: 100%;
     width: 4%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--filter-gr-border-color);
+    border: 1px solid var(--filter-gr-border-color);
     border-radius: 15px 0 0 15px;
-
+    box-sizing: border-box;
+}
+.background-icon-search i{
+    color: #000;
 }
 
-input{
+.search-champ {
     font-size: 18px;
     font-weight: 700;
     text-align: center;
     height: 100%;
-    border: transparent;
+    border: 1px solid transparent;
     box-sizing: border-box;
-    padding: 0 14px 0 14px;
-    background-color: cadetblue;
+    padding: 14px 21px 14px 21px;
+    /* background-color: cadetblue; */
 }
-label{
+.btn-search{
     display: flex;
     background-color: var(--main-color);
     font-size: 18px;
@@ -107,16 +100,19 @@ label{
     align-items: center;
     padding: 0 14px 0 14px;
     height: 100%;
-    color: var(--filter-bg-color);
+    color: var(--filter-txt-color);
     font-weight: 700;
+    border: 1px solid var(--main-color);
     border-radius: 0 15px 15px 0;
     box-sizing: border-box;
-    
+}
+.btn-search:hover{
+    box-shadow: 2px 2px 14px var(--main-color);
+cursor: pointer;
 }
 
-
-
 /* search bar style  end*/
+
 
 /* menu filter economique familial romantique et nos petites */
 
@@ -124,10 +120,9 @@ label{
     display: flex;
     /* flex-direction: row; */
     column-gap: 2%;
-    /* height: 50px; */
-    background-color: aqua;
+    height: 50px;
+    
     align-items: center;
-    box-sizing: border-box;
     padding-top: 0.4em;
     padding-bottom: 0.4em;
 }
@@ -142,33 +137,48 @@ label{
     text-decoration: none;
     font-weight: 700;
     padding-right: 0.8em;
+    border: 2px solid var(--filter-gr-border-color);
+    border-radius: 25px;
+    box-sizing: border-box;
 }
 .navfilter i{
     padding: 0.8em;
 }
 
 .navfilter a:hover {
-    /* border: 2px solid gray; */
     color: var(--main-color);
     border-radius:  30px;
-    box-shadow: 2px 2px 10px black;
+    box-shadow: 2px 2px 10px var(--filter-gr-border-color);
+       /* background-color: var(--main-color); */
+    background-color: rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
 }
 
+
+/* Plus de 500 logements sont disponibles dans cette ville */
 .info-bloc{ 
-    margin: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: 49px;
+    display: flex;
+    flex-direction: row;
+    
 }
-.info-icon{
-    padding: 0.8em;
+.info-icon i{
+    color: black;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    padding-right: 0.8em;
+    /* display: inline-block; */
 }
-.info-text{
+.info-text p{
     color: #000;
     font-size: 0.8em;
     font-weight: 500;
     padding: 0.8em;
-
+    display: inline-block;
 }
-
+/* FIN  Plus de 500 logements sont disponibles dans cette ville */
 
 
 .fa-solid {
@@ -180,7 +190,7 @@ label{
     max-width: 1440px;
     padding: 0 50px;
     /* box-sizing: border-box; */
-    background-color: darkgrey;
+    
 }
 
 .section-title {
@@ -221,7 +231,7 @@ label{
 
 .hebergements-and-populaires section {
     /* background-color: var(--main-bg-color); */
-    background-color: green;
+    background-color: var(--filter-gr-border-color);
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
@@ -242,7 +252,7 @@ label{
     margin-top: 33px;
     flex-flow: row wrap;
     /* flex-direction: row; */
-    justify-content: center;
+    justify-content: space-between;
     /* flex-wrap: wrap; */
     row-gap: 30px;
     column-gap: 30px;
@@ -364,16 +374,65 @@ label{
 
 /* Activité à Marseille card */
 
-.activmars {
+
+.section-activite {
+    
+    /* background-color: green; */
+    padding: 30px;
+    box-sizing: border-box;
+
+}
+
+
+.activiterow{
+    display: flex;
+    margin-top: 33px;
+    flex-flow: row wrap;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* row-gap: 30px; */
+    column-gap: 30px;
+    
+    
+} 
+
+
+.activite-cards .card {
+    /* margin-top: 30px; */
+    width: 22%;
+    display: flex;
+    flex-direction: column;    
+    padding: 5px;
+  /* flex-basis: 33%; */
+}
+.activite-cards a{
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Changement de la largeur */
+.activite-cards img {
+    width: 100%;
+    height: 380px;
+    border-radius: 20px 20px 0 0;
+   
+}
+
+.activite-cards .card-content {
     display: flex;
     flex-direction: column;
-    width: 30%;
-    box-sizing: border-box;
+    justify-content: space-around;
 }
-.activmars img{
-    object-fit: cover;
-  width: 200px;
+
+.activite-cards .card-title {
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 19px 20px 19px 20px ;
 }
+
 
 
 

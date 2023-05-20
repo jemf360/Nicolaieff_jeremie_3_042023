@@ -92,6 +92,10 @@ form{
     padding: 14px 21px 14px 21px;
     /* background-color: cadetblue; */
 }
+.search-champ:hover {
+    pointer-events: painted;
+}
+
 .btn-search{
     display: flex;
     background-color: var(--main-color);
@@ -109,6 +113,7 @@ form{
 .btn-search:hover{
     box-shadow: 2px 2px 14px var(--main-color);
 cursor: pointer;
+/* pointer-events: none; */
 }
 
 /* search bar style  end*/
@@ -443,6 +448,25 @@ cursor: pointer;
          
     padding: 19px 20px 19px 20px ;
 }
+
+
+/* footer  */
+
+footer {
+    display: flex;
+    height: 164px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+}
+footer a {
+    display: flex;
+    display: inline-block;
+padding-top: 15px;
+}
+
+
+
 
 
 

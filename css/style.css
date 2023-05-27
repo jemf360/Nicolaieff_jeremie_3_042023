@@ -130,26 +130,23 @@ form{
 .search-field {
     font-size: 18px;
     font-weight: 700;
-    /* text-align: center; */
     height: 100%;
-    border-top: 1px solid var(--filter-bg-color);
-    border-bottom: 1px solid var(--filter-bg-color);
+    border-top: 1px solid var(--main-bg-color);
+    border-bottom: 1px solid var(--main-bg-color);
     border-right: 1px solid transparent;
     border-left: 1px solid transparent;
-    /* box-sizing: border-box; */
     padding: 14px 21px 14px 21px;
-    /* background-color: cadetblue; */
+   
 }
 .search-field:hover {
     pointer-events: painted;
 }
 .search-field:focus{
     outline: none;
-    border: 4px solid yellow;
-    
+    border: 4px solid yellow;   
 }
-.search-field:placeholder-shown{
-    text-decoration: none;
+.search-field::placeholder{
+    opacity: 1;
     color: black;
 }
 
@@ -169,8 +166,8 @@ form{
 }
 .btn-search:hover{
     box-shadow: 2px 2px 14px var(--main-color);
-cursor: pointer;
-/* pointer-events: none; */
+    cursor: pointer;
+    /* pointer-events: none; */
 }
 
 /* search bar style  end*/
@@ -186,7 +183,10 @@ cursor: pointer;
     padding-top: 0.4em;
     padding-bottom: 0.4em;
 }
-
+.nav-filter h3 a {
+    /* display: flex;
+    display: inline-block; */
+}
 .nav-filter a {
     color: black;
     text-decoration: none;
@@ -194,6 +194,7 @@ cursor: pointer;
     padding-right: 0.8em;
     border: 2px solid var(--main-bg-color);
     border-radius: 25px;
+  
 }
 .nav-filter i{
     padding: 0.8em;
@@ -309,8 +310,8 @@ cursor: pointer;
 .hebergements-cards img {
     width: 100%;
     height: 124px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .hebergements-cards .card-content {
@@ -365,8 +366,8 @@ cursor: pointer;
 .populaires-cards img {
     width: 33%;
     height: 136px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 .populaires-cards .card-content {
@@ -432,8 +433,8 @@ cursor: pointer;
 /* Changement de la largeur */
 .activite-cards img {
     width: 100%;
-    height: 380px;
-    border-radius: 20px 20px 0 0;
+    height: 20em;
+    border-radius: 15px 15px 0 0;
    
 }
 

@@ -127,7 +127,7 @@ header {
     height: 49px;
     align-items: center;
 }
-.search-bar-icon{
+.search-bar-icon-box{
     height: 100%;
     width: 50px;
     display: flex;
@@ -135,8 +135,9 @@ header {
     align-items: center;
     background-color: var(--main-bg-color);
     border-radius: 15px 0 0 15px;
+    
 }
-.search-bar-icon i{
+.label-icon i{
     color: #000;
 }
 .search-field {
@@ -289,14 +290,14 @@ header {
     padding-bottom: 30px;
     flex-flow: row wrap;
     justify-content: space-between;
-    gap: 30px;
+    row-gap: 30px;
 } 
 .hebergements-cards .clic{
     display: flex;
     display: block;
     text-decoration: none;
     color: #000;
-    flex-basis: 29%;
+    flex-basis: 30%;
     border-radius: 20px;
 
 }

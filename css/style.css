@@ -189,7 +189,7 @@ header {
     padding-bottom: 0.4em;
 }
 
-.nav-filter-bar h3{
+.nav-filter-bar p{
     font-size: 18px;
     font-weight: 700;
 }
@@ -448,7 +448,7 @@ footer {
     background-color: var(--main-bg-color);   
 }
 
-footer h3{
+footer h2{
     font-size: 18px;
     font-weight: 700;
 }
